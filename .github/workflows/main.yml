@@ -38,7 +38,7 @@ jobs:
 
       # Construccion de imagenes
       - name: Build image Workers
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:client .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:worker .
         working-directory: MicroserviceWorkers
         
       - name: Build image config
@@ -50,7 +50,7 @@ jobs:
         working-directory: MicroServiceEureka
 
       - name: Build image Articulo
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:item .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:articulo .
         working-directory: MicroserviceArticulo
 
 
