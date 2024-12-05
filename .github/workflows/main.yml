@@ -24,10 +24,10 @@ jobs:
           
       # Construccion de jars
       - name: Build Micro Workers
-        run: mvn -f MicroserviceClient/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroserviceWorkers/pom.xml clean install -DskipTests=true
       
       - name: Build Micro Articulo
-        run: mvn -f MicroserviceItem/pom.xml clean install -DskipTests=true
+        run: mvn -f MicroserviceArticulo/pom.xml clean install -DskipTests=true
 
       - name: Build Micro Config
         run: mvn -f MicroserviceConfig/pom.xml clean install -DskipTests=true
